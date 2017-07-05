@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Id5-Qe-4iy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM2-4O-beq">
+                                <rect key="frame" x="112.5" y="214" width="150" height="36"/>
+                                <color key="backgroundColor" red="0.10043866739703988" green="0.46722833317207968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="VzI-xw-XDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="UIWebView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="esO-sT-rVg" kind="show" id="TGD-sG-Km8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfj-7n-kWz">
+                                <rect key="frame" x="112.5" y="350" width="150" height="36"/>
+                                <color key="backgroundColor" red="0.1004386674" green="0.46722833320000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Stm-IX-C32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="WKWebView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dc1-hh-R1o" kind="show" id="cU4-fT-D8L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SM2-4O-beq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="3By-ug-RQq"/>
+                            <constraint firstItem="SM2-4O-beq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Emg-l5-tM2"/>
+                            <constraint firstItem="xfj-7n-kWz" firstAttribute="top" secondItem="SM2-4O-beq" secondAttribute="bottom" constant="100" id="M0r-Ah-pNl"/>
+                            <constraint firstItem="xfj-7n-kWz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pH3-E4-9vE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="sGw-Ri-dzm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="227"/>
+        </scene>
+        <!--WKWebView-->
+        <scene sceneID="yMh-jD-QWv">
+            <objects>
+                <viewController id="dc1-hh-R1o" customClass="WKWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VxU-Lu-o8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="FMW-9F-sLT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gvV-fY-JHb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WKWebView" id="xet-Vf-mL6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVG-Et-azj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="569"/>
+        </scene>
+        <!--UIWebView-->
+        <scene sceneID="GAy-CT-kmu">
+            <objects>
+                <viewController id="esO-sT-rVg" customClass="UIWebViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4VL-xP-eme"/>
+                        <viewControllerLayoutGuide type="bottom" id="joD-ff-A7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rkc-cP-K66">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIWebView" id="LT6-pF-UNV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Qe-my-0bM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5gr-Li-uHB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Id5-Qe-4iy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a79-TC-5qe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PxR-Ir-Ab4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPf-nj-h71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.59999999999999" y="777.66116941529242"/>
+        </scene>
+    </scenes>
+</document>
